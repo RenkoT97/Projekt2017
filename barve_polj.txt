@@ -1,10 +1,10 @@
-[[A, A, B, B, B, C], [A, D, D, E, F, C], [G, G, I, E, F, F], [G, J, I, H, K, K], [L, J, M, H, N, N], [L, L, M, M, M, N]]
-[[A, A, A, B, C, C], [D, E, E, B, F, F], [D, E, G, H, H, I], [J, K, G, L, L, I], [J, K, M, M, L, N], [O, O, O, N, N, N]]
-[[A, A, B, B, C, C], [D, A, A, B, E, E], [D, D, D, B, F, G], [H, I, J, J, F, G], [H, I, K, L, F, F], [H, K, K, L, M, M]]
-[[A, A, B, B, J, C], [D, E, E, E, J, C], [D, F, F, G, G, H], [D, I, K, K, K, H], [D, I, I, L, M, M], [N, N, N, L, M, M]]
-[[C, D, D, B, B, B], [C, A, A, A, F, B], [E, G, G, H, F, B], [E, I, I, H, J, J], [K, K, I, M, M, J], [K, K, I, L, L, L]]
-[[A, A, A, B, B, B], [C, C, A, D, D, B], [E, E, F, F, G, H], [E, E, K, G, G, H], [I, J, K, K, L, M], [I, J, L, L, L, M]]
-[[A, A, A, B, B, C], [D, E, F, G, G, C], [D, E, F, I, I, J], [K, K, L, L, M, J], [K, K, N, O, M, J], [N, N, N, O, O, O]]
-[[A, A, A, B, B, C], [D, A, E, E, F, C], [D, H, H, F, F, F], [K, H, H, I, J, J], [K, K, L, I, I, M], [N, N, L, O, O, M]]
-[[A, A, A, B, B, C], [D, E, F, F, F, C], [D, E, G, G, H, H], [I, I, I, J, H, H], [I, L, L, J, J, K], [M, M, N, N, N, K]]
-[[B, B, B, C, C, C], [B, B, A, A, D, D], [B, A, A, D, D, E], [F, A, C, H, I, E], [F, F, G, H, I, K], [F, F, F, J, I, K]]
+~A, A, B, B, B, C~A, D, D, E, F, C~G, G, I, E, F, F~G, J, I, H, K, K~L, J, M, H, N, N~L, L, M, M, M, N~
+~A, A, A, B, C, C~D, E, E, B, F, F~D, E, G, H, H, I~J, K, G, L, L, I~J, K, M, M, L, N~O, O, O, N, N, N~
+~A, A, B, B, C, C~D, A, A, B, E, E~D, D, D, B, F, G~H, I, J, J, F, G~H, I, K, L, F, F~H, K, K, L, M, M~
+~A, A, B, B, J, C~D, E, E, E, J, C~D, F, F, G, G, H~D, I, K, K, K, H~D, I, I, L, M, M~N, N, N, L, M, M~
+~C, D, D, B, B, B~C, A, A, A, F, B~E, G, G, H, F, B~E, I, I, H, J, J~K, K, I, M, M, J~K, K, I, L, L, L~
+~A, A, A, B, B, B~C, C, A, D, D, B~E, E, F, F, G, H~E, E, K, G, G, H~I, J, K, K, L, M~I, J, L, L, L, M~
+~A, A, A, B, B, C~D, E, F, G, G, C~D, E, F, I, I, J~K, K, L, L, M, J~K, K, N, O, M, J~N, N, N, O, O, O~
+~A, A, A, B, B, C~D, A, E, E, F, C~D, H, H, F, F, F~K, H, H, I, J, J~K, K, L, I, I, M~N, N, L, O, O, M~
+~A, A, A, B, B, C~D, E, F, F, F, C~D, E, G, G, H, H~I, I, I, J, H, H~I, L, L, J, J, K~M, M, N, N, N, K~
+~B, B, B, C, C, C~B, B, A, A, D, D~B, A, A, D, D, E~F, A, C, H, I, E~F, F, G, H, I, K~F, F, F, J, I, K~
