@@ -1,5 +1,7 @@
 import tkinter as tk
 import random
+import sys
+import os
 
 def pretvori_dat_v_sez(ime_dat):
     seznam = []
@@ -49,28 +51,6 @@ barve = {'A': 'chocolate3', 'B': 'green yellow', 'C': 'RoyalBlue3', 'D': 'maroon
 'L': 'SeaGreen1', 'M': 'gold', 'N': 'red3', 'O': 'LightPink3'}
 
 okno = tk.Tk()
-#okno.config(font=("Courier", 200))
-
-polje1 = tk.Label()
-polje1.grid(row = 0, column = 0, columnspan = 7, rowspan = 7)
-
-def povej_mi_navodila():
-    print('Kenken je matematična uganka, ki jo je leta 2004 razvil japonski učitelj Tetsuya Miyamoto. Rešuje se ga tako, da se v vsako vrstico, stolpec in vsak lik enake barve kvadrata s stranico dolžine nvpiše prvih n različnih naravnih števil.')
-
-gumb_za_navodila = tk.Button(okno, text = 'Povej mi navodila!', command = povej_mi_navodila)
-gumb_za_navodila.grid(row = 0, column = 0)
-gumb_za_navodila.pack
-
-def izhod():
-    okno.destroy()
-
-gumb_za_izhod = tk.Button(okno, text = 'Izhod', command = izhod)
-gumb_za_izhod.grid(row = 0, column = 2)
-gumb_za_izhod.pack
-
-polje2 = tk.Label()
-polje2.config(font=("Courier", 200))
-polje2.grid(row = 1, column = 0, columnspan = 6, rowspan = 7)
 
 gumb1 = tk.Entry(okno, bg = barve[seznam2[št_kenkena][0][0]])
 gumb1.insert(0, seznam3[št_kenkena][0][0] + '           ')
@@ -114,7 +94,7 @@ gumb13 = tk.Entry(okno, bg = barve[seznam2[št_kenkena][2][0]])
 gumb13.insert(0, seznam3[št_kenkena][2][0] + '           ')
 gumb13.grid(row = 3, column = 0, ipady = 40)
 gumb14 = tk.Entry(okno, bg = barve[seznam2[št_kenkena][2][1]])
-gumb14.insert(0, seznam3[št_kenkena][2][0] + '           ')
+gumb14.insert(0, seznam3[št_kenkena][2][1] + '           ')
 gumb14.grid(row = 3, column = 1, ipady = 40)
 gumb15 = tk.Entry(okno, bg = barve[seznam2[št_kenkena][2][2]])
 gumb15.insert(0, seznam3[št_kenkena][2][2] + '           ')
@@ -216,13 +196,45 @@ def preberi_rešitve():
 
 def preveri_rešitve():
     if preberi_rešitve() == rešitve():
-        print('Čestitke! Pravilno ste izpolnili kenken!')
+        return 'Čestitke! Pravilno ste izpolnili kenken!'
     else:
-        print('Vaša rešitev je žal napačna.')
-    print(preberi_rešitve())
+        return 'Vaša rešitev je žal napačna.'
+
+def okno_preveri_rešitve():
+    okno2 = tk.Tk()
+    rešitve = tk.Label(okno2, text = preveri_rešitve(), bg = 'papayawhip', font = 'slant')
+    rešitve.pack()
+    okno2.mainloop()
     
-gumb_za_preverjanje_rešitev = tk.Button(okno, text = 'Preveri rešitve!', command = preveri_rešitve)
+gumb_za_preverjanje_rešitev = tk.Button(okno, text = 'Preveri rešitve', command = okno_preveri_rešitve, cursor = 'hand2', activebackground = 'wheat', bg = 'papayawhip', width = '16')
 gumb_za_preverjanje_rešitev.grid(row = 0, column = 1)
 gumb_za_preverjanje_rešitev.pack
+
+besedilo_navodila = 'Kenken je matematična uganka, ki jo je leta 2004 razvil japonski učitelj Tetsuya Miyamoto. \n Rešuje se ga tako, da se v vsako vrstico in stolpec dolžine n napiše prvih n različnih naravnih \n števil, v vsako polje iste barve pa taka števila, da iz njih s pripadajočo operacijo dobimo \n rezultat, napisan v polju.'
+
+def povej_mi_navodila():
+    okno3 = tk.Tk()
+    navodila = tk.Label(okno3, text = besedilo_navodila, bg = 'papayawhip', font = 'slant', justify = 'left')
+    navodila.pack()
+    okno3.mainloop()
+
+gumb_za_navodila = tk.Button(okno, text = 'Povej mi navodila', command = povej_mi_navodila, cursor ='hand2', activebackground = 'wheat', bg = 'papayawhip', width = '16')
+gumb_za_navodila.grid(row = 0, column = 0)
+gumb_za_navodila.pack
+
+def začni_še_enkrat():
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+
+gumb_za_nov_kenken = tk.Button(okno, text = 'Nov kenken', command = začni_še_enkrat, cursor = 'hand2', activebackground = 'wheat', bg = 'papayawhip', width = '16')
+gumb_za_nov_kenken.grid(row = 0, column = 2)
+gumb_za_nov_kenken.pack
+
+def izhod():
+    okno.destroy()
+
+gumb_za_izhod = tk.Button(okno, text = 'Izhod', command = izhod, cursor = 'hand2', activebackground = 'wheat', bg = 'papayawhip', width = '16')
+gumb_za_izhod.grid(row = 0, column = 3)
+gumb_za_izhod.pack
 
 okno.mainloop()
