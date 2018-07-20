@@ -7,4 +7,4 @@
 ~A, A, A, B, B, C~D, E, F, G, G, C~D, E, F, I, I, J~K, K, L, L, M, J~K, K, N, O, M, J~N, N, N, O, O, O~
 ~A, A, A, B, B, C~D, A, E, E, F, C~D, H, H, F, F, F~K, H, H, I, J, J~K, K, L, I, I, M~N, N, L, O, O, M~
 ~A, A, A, B, B, C~D, E, F, F, F, C~D, E, G, G, H, H~I, I, I, J, H, H~I, L, L, J, J, K~M, M, N, N, N, K~
-~B, B, B, C, C, C~B, B, A, A, D, D~B, A, A, D, D, E~F, A, C, H, I, E~F, F, G, H, I, K~F, F, F, J, I, K~
+~B, B, B, C, C, C~B, B, A, A, D, D~B, A, A, D, D, E~F, A, G, H, I, E~F, F, G, H, I, K~F, F, F, J, I, K~
