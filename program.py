@@ -35,9 +35,9 @@ seznam3 = spremeni_seznam(seznam31)
 
 st_kenkena = random.randint(0, 9)
 
-barve = {'A': 'chocolate3', 'B': 'green yellow', 'C': 'RoyalBlue3', 'D': 'maroon1', 'E': 'NavajoWhite2', \
-'F': 'lime green', 'G': 'DarkOrange1', 'H': 'Sienna1', 'I': 'DeepPink4', 'J': 'SkyBlue3', 'K': 'purple4', \
-'L': 'SeaGreen1', 'M': 'gold', 'N': 'red3', 'O': 'LightPink3'}
+barve = {'A': 'deep sky blue', 'B': 'yellow', 'C': 'red2', 'D': 'forest green', 'E': 'tan1', \
+'F': 'DarkOrange1', 'G': 'chartreuse2', 'H': 'deep pink', 'I': 'steel blue', 'J': 'plum3', \
+'K': 'SlateBlue3', 'L': 'medium sea green', 'M': 'goldenrod', 'N': 'OliveDrab2', 'O': 'DarkOrchid3'}
 
 okno = tk.Tk()
 
@@ -109,7 +109,7 @@ gumb_za_navodila.pack
 
 def zacni_še_enkrat():
     python = sys.executable
-    os.execl(python, python, * sys.argv)
+    os.execl(python, python, *sys.argv)
 
 gumb_za_nov_kenken = tk.Button(okno, text = 'Nov kenken', command = zacni_še_enkrat, cursor = 'hand2', activebackground = 'wheat', bg = 'papayawhip', width = '16')
 gumb_za_nov_kenken.grid(row = 0, column = 2)
